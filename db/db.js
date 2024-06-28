@@ -5,7 +5,7 @@ const connectDB = async () => {
         await mongoose.connect('mongodb://localhost:27017/e-com');
         console.log('MongoDB connected');
     } catch (err) {
-        console.error(err.message);
+        console.error("error", err.message);
     }
 };
 
